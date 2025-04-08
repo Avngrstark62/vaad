@@ -1,10 +1,12 @@
-function App() {
+import AuthProvider from "./components/AuthProvider";
+import Home from "./components/Home";
 
+function App() {
   return (
-      <div>
-        <h1>vaad</h1>
-      </div>
-  )
+    <AuthProvider>
+      <Home />
+    </AuthProvider>
+  );
 }
 
-export default App
+export default App;
